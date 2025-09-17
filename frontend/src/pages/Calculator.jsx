@@ -73,7 +73,7 @@ const Calculator = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/api/calculate",
+        "https://cti-calculator.onrender.com/api/calculate",
         form
       );
       setResult(data);
